@@ -951,3 +951,38 @@ header p{ font-size: clamp(16px, 2.5vw, 22px); }
     .nav-links a{ font-size: 14px; }
     .toggle-aside{ margin-top: 70px; }
 }
+
+/* Responsive Project Details */
+@media (max-width: 1200px){
+    .Project-Details{ margin-left: 0; width: 90%; }
+    .project-details-container img, 
+    .Preview-Btn,
+    .project-details-container-not-available img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px){
+    .Project-Details{ margin-left: auto; margin-right: auto; width: 90%; }
+    .project-details-container { justify-content: center; }
+    .project-details-container img, 
+    .Preview-Btn {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .Project-Details{ margin-left: auto; width: 92%; }
+    .Project-Details h2 { font-size: 32px; }
+    .Project-Details p { font-size: 18px; }
+    .project-details-container img { width: 100%; height: auto; }
+    .Preview-Btn { width: 100%; font-size: 24px; height: auto;}
+    
+    /* Lightbox Responsive */
+    .lightbox-prev, .lightbox-next { padding: 10px; font-size: 30px; }
+    .lightbox-prev { left: 5px; }
+    .lightbox-next { right: 5px; }
+    .lightbox-close { right: 10px; top: 10px; font-size: 30px; }
+}
