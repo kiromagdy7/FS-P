@@ -513,8 +513,172 @@ footer aside{
     font-size: 14px;
     color: var(--text-color);
 }
+/*-----------------------------*/
+.Project-Details{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 12%;
+    margin-top: 5px;
+}
+.Project-Details h2{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+.Project-Details p {
+    font-size: 20px;
+    color: #afafaf;
+    margin: 0;
+    padding: 0;
+}
+.Project-Details p span {
+    font-size: 20px;
+    color: var(--sec-color);
+    margin: 0;
+    padding: 0;
+}
+.project-details-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    gap: 15px;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.project-details-container img{
+  cursor: pointer;
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit:cover;
+}
+.project-details-container-not-available{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.project-details-container-not-available img{
+    width: 900px;
+    height: 500px;
+    border-radius: 15px;
+    object-fit:cover;
+}
+.project-details-container h4{
+    font-size: 20px;
+    color: var(--text-color);
+    margin: 10px 0px 5px 10px;
+}
+.Preview-Btn{
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+    background-color: var(--skills-btns-color);
+    color: var(--skills-btns-color-text);
+    padding: 8px 18px;
+    font-size: 40px;
+    font-weight: normal;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+.Preview-Btn:active{
+    transform: scale(0.90);
+    transition: 0.5s ease-in-out;
+}
+.Preview-Btn:hover{
+    transform: scale(1.02);
+    background-color: #37473c;
+}
 /*-------------------------------*/
-/* From Uiverse.io by mobinkakei */ 
+/* Lightbox Styles */
+#lightbox {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border: none;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: var(--sec-color);
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 20px;
+    transition: 0.2s;
+    user-select: none;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    color: var(--sec-hover-color);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: transparent;
+    color: var(--sec-color);
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lightbox-close:hover {
+    color: var(--sec-hover-color);
+    transform: scale(1.1);
+}
+/*-------------------------------*/
 #wifi-loader {
     --background: #62abff;
     --front-color: var(--sec-color);

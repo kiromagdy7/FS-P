@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <script src="../JS/LoaderScript.js"></script>
+    <link rel="shortcut icon" href="../Materials/ic0.svg" type="image/x-icon">
+    <title>Kirollos Magdy</title>
+</head>
+<body>
+    <div id="wifi-loader">
+        <svg class="circle-outer" viewBox="0 0 86 86">
+            <circle class="back" cx="43" cy="43" r="40"></circle>
+            <circle class="front" cx="43" cy="43" r="40"></circle>
+            <circle class="new" cx="43" cy="43" r="40"></circle>
+        </svg>
+        <svg class="circle-middle" viewBox="0 0 60 60">
+            <circle class="back" cx="30" cy="30" r="27"></circle>
+            <circle class="front" cx="30" cy="30" r="27"></circle>
+        </svg>
+        <svg class="circle-inner" viewBox="0 0 34 34">
+            <circle class="back" cx="17" cy="17" r="14"></circle>
+            <circle class="front" cx="17" cy="17" r="14"></circle>
+        </svg>
+        <div class="text" data-text="Loading..."></div>
+    </div>
+    <nav>
+        <div>
+            <h1>Portfolio</h1>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+                <a href="../CV/KM-CV.pdf" download target="_blank"><button class="download-resume">Download Resume</button></a>  
+        </div>
+    </nav>
+    <aside class="toggle-aside">
+        <div class="toggle-switch">
+            <label class="switch-label">
+              <input type="checkbox" class="checkbox" onclick="toggleDarkMode()">
+              <span class="slider"></span>
+            </label>
+          </div>  
+    </aside>
+
+    <section class="Project-Details">
+        <div>
+            <h2>Word of the Lord</h2>
+        </div>
+        <div>
+            <p>
+                <span>“Word of the Lord”</span> Is A Christian website displays Verse of the Day with sections for Sermons,<br>
+                Mysteries, Liturgy, and Bible in a clean, simple design.<br><br>
+            </p>
+        </div>
+        <div class="project-details-container">
+            <div>
+               <h4>Home Page</h4>
+            <img src="../Materials/Word of the Lord/Home.png" alt="Word of the Lord Home Page" loading="lazy">
+           </div>
+           <div>
+               <h4>Agpya Page</h4>
+            <img src="../Materials/Word of the Lord/Agpya.png" alt="Word of the Lord Agpya Page" loading="lazy">
+           </div>
+           <div>
+               <h4>Bible Page</h4>
+            <img src="../Materials/Word of the Lord/Bible.png" alt="Word of the Lord Bible Page" loading="lazy">
+           </div>
+           <div>
+               <h4>Ezaat Page</h4>
+            <img src="../Materials/Word of the Lord/Ezaat.png" alt="Word of the Lord Ezaat Page" loading="lazy">
+           </div>
+           <div>
+               <h4>Al Asrar Page</h4>
+            <img src="../Materials/Word of the Lord/Al Asrar.png" alt="Word of the Lord Al Asrar Page" loading="lazy">
+           </div>
+           <div>
+            <h4>Click To Preview</h4>
+            <a class="Preview-Btn" href="https://kiromagdy7.github.io/word-of-the.lord/" target="_blank"><h3>Live Preview</h3></a>
+           </div>
+        </div>
+    </section>
+    <section class="skills"style="width: 85%; margin-left: 12%;">
+        <h2>Used Technologies & Tools</h2>
+        <div class="skills-container">
+            <div>
+                <button>HTML</button>
+                <button>CSS</button>
+                <button>JavaScript</button>  
+                <button>Bootstrap</button>
+                <button>JSON</button>
+                <button>Canva</button>
+                <button>GitHub</button>           
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects" style="width: 85%; margin-left: 12%;">
+        <h2>More Projects</h2>
+        <div class="projects-container">
+            <div class="project-card" id="project-card">
+                <a href="../Projects/CodeCrate.html" target="_blank">
+                    <div>
+                        <img src="../Materials/Code Crate/CodeCrate.svg" alt="Code Crate" loading="lazy">
+                        <h3>Code Crate</h3>
+                    </div>
+                    <div class="project-card-back" style="margin-top: 40px;">
+                        <p>
+                           <span>“Code Crate”</span> <br>
+                           A learning platform.<br><br>
+                            <span>Click</span> for More Details 
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card" id="project-card">
+                <a href="../Projects/DivStore.html" target="_blank">
+                    <div>
+                        <img src="../Materials/Div Store/DivStore.svg" alt="Div Store" loading="lazy">
+                        <h3>Div Store</h3>
+                    </div>
+                    <div class="project-card-back" style="margin-top: 40px;">
+                        <p>
+                           <span>“Div Store”</span> <br>
+                           An E-commerce website.<br><br>
+                            <span>Click</span> for More Details 
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card" id="project-card">
+                <a href="../Projects/GoldAndSilverSystem.html" target="_blank">
+                    <div>
+                        <img src="../Materials/Gold & Silver System/Gold&SilverSystem.svg" alt="Gold & Silver System" loading="lazy">
+                        <h3>Gold & Silver ERPSystem</h3>
+                    </div>
+                    <div class="project-card-back" style="margin-top: 40px;">
+                        <p>
+                           <span>“Gold & Silver System”</span> <br>
+                            A ERP System for Gold & Silver Shops.<br><br>
+                            <span>Click</span> for More Details 
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card" id="project-card">
+                <a href="../Projects/Travely.html" target="_blank">
+                    <div>
+                        <img src="../Materials/Travely/Travely.svg" alt="Travely" loading="lazy">
+                        <h3>Travely</h3>
+                    </div>
+                    <div class="project-card-back" style="margin-top: 40px;">
+                        <p>
+                           <span>“Travely”</span> <br>
+                            A Travel Agency Website.<br><br>
+                            <span>Click</span> for More Details 
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card" id="project-card">
+                <a href="../Projects/TetaKitchen.html" target="_blank">
+                    <div>
+                        <img src="../Materials/TetaKitchen/TetaKitchen.svg" alt="Teta Kitchen" loading="lazy">
+                        <h3>Teta Kitchen</h3>
+                    </div>
+                    <div class="project-card-back" style="margin-top: 40px;">
+                        <p>
+                            <span>“Teta Kitchen”</span> <br>
+                            A Website for Old Recipes.<br><br>
+                            <span>Click</span> for More Details
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <aside>
+            <div class="social-icons" style="margin: 0;">
+                <a href="https://github.com/kiromagdy7" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kirollos-magdy-1102a1278/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:kiromagdy123@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </aside>
+        <div class="footer-text">
+            <p>© 2026 Kirollos Magdy. All rights reserved.</p>
+        </div>
+    </footer>
+    
+<script src="../JS/Script.js"></script>
+</body>
+</html>
